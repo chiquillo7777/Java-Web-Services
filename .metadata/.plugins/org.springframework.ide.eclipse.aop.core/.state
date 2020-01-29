@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="hellowebservice"/>
+<aop-project name="wsdlfirstws"/>
+<aop-project name="javasoapclient"/>
+</aop-reference-model>
