@@ -8,16 +8,18 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 import javax.activation.DataHandler;
+import javax.activation.FileDataSource;
 
 public class FileWsImpl implements FileWs {
 
 	@Override
 	public void upload(DataHandler attachment) {
 		
-		
+		InputStream inputStream = null;
+		OutputStream outputStream = null;
 		try {
-			InputStream inputStream = attachment.getInputStream();
-			OutputStream outputStream = new FileOutputStream(new File("C:\\Users\\carlos.chiquillo\\Documents\\workspace1\\Java-Web-Services\\mtom\\src\\main\\resources\\files\\uploaded\\test.jfif"));
+			inputStream = attachment.getInputStream();
+			outputStream = new FileOutputStream(new File("C:\\Users\\carlos.chiquillo\\Documents\\workspace1\\Java-Web-Services\\mtom\\src\\main\\resources\\files\\uploaded\\test.jfif"));
 			byte[] b = new byte[100000];
 			int bytesRead = 0;
 			
@@ -25,8 +27,15 @@ public class FileWsImpl implements FileWs {
 				outputStream.write(b, 0, bytesRead);
 			}
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}finally {
+			try {
+				inputStream.close();
+				outputStream.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			
 		}
 		
 		
@@ -35,8 +44,8 @@ public class FileWsImpl implements FileWs {
 
 	@Override
 	public DataHandler download() {
-		// TODO Auto-generated method stub
-		return null;
+
+		return new DataHandler(new FileDataSource(new File("C:\\Users\\carlos.chiquillo\\Documents\\workspace1\\Java-Web-Services\\mtom\\src\\main\\resources\\files\\uploaded\\test.jfif")));
 	}
 
 }
