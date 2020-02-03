@@ -7,9 +7,13 @@ import javax.jws.WebService;
 
 import com.bharath.ws.soap.dto.PaymentProcessorRequest;
 import com.bharath.ws.soap.dto.PaymentProcessorResponse;
-@WebService(name="PaymentProcessor")
+import com.bharath.ws.soap.exceptions.ServiceException;
+
+@WebService(name = "PaymentProcessor")
 public interface PaymentProcessor {
 
 	@WebMethod
-	public @WebResult(name="response") PaymentProcessorResponse processPayment(@WebParam(name="PaymentProcessorRequest") PaymentProcessorRequest paymentProcessorRequest);
+	public @WebResult(name = "response") PaymentProcessorResponse processPayment(
+			@WebParam(name = "PaymentProcessorRequest") PaymentProcessorRequest paymentProcessorRequest)
+			throws ServiceException;
 }
