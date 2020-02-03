@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.bharath.ws.soap.PaymentProcessorImplService"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
+<fullyQualifiedTypeName name="com.bharath.ws.soap.PaymentProcessor"/>
+<fullyQualifiedTypeName name="com.bharath.ws.soap.PaymentProcessorResponse"/>
+<fullyQualifiedTypeName name="com.bharath.ws.soap.PaymentProcessorRequest"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.apache.cxf.frontend.ClientProxy"/>
+<fullyQualifiedTypeName name="org.apache.cxf.endpoint.Client"/>
+<fullyQualifiedTypeName name="org.apache.cxf.endpoint.Endpoint"/>
+<fullyQualifiedTypeName name="org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="org.apache.wss4j.dom.WSConstants"/>
+<fullyQualifiedTypeName name="org.apache.wss4j.common.ext.WSPasswordCallback"/>
+<fullyQualifiedTypeName name="org.apache.wss4j.dom.handler.WSHandlerConstants"/>
+<fullyQualifiedTypeName name="com.carloschiquillo.ws.client.UTPasswordCallback"/>
+<fullyQualifiedTypeName name="javax.activation.DataHandler"/>
+<fullyQualifiedTypeName name="javax.jws.WebService"/>
+<fullyQualifiedTypeName name="javax.jws.WebParam"/>
+</qualifiedTypeNameHistroy>

@@ -108,6 +108,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\carlos.chiquillo\Documents\workspace1\Java-Web-Services\wsdlfirstws"/>
+			<item value="C:\Users\carlos.chiquillo\Documents\workspace1\Java-Web-Services\javasoapclient"/>
 			<item value="C:\Users\chiquillo5678\Documents\Workspace1\hellowebservice"/>
 			<item value="C:\Users\chiquillo5678\Documents\Workspace1\wsdlfirstws"/>
 			<item value="C:\Users\chiquillo5678\Documents\Workspace1\javasoapclient"/>
