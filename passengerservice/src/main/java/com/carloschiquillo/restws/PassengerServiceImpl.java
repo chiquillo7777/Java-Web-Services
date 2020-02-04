@@ -2,8 +2,14 @@ package com.carloschiquillo.restws;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
+
+import javax.ws.rs.FormParam;
+import javax.ws.rs.HeaderParam;
+import javax.ws.rs.core.HttpHeaders;
 
 import org.springframework.stereotype.Service;
+import org.springframework.util.MultiValueMap;
 
 import com.carloschiquillo.restws.model.Passenger;
 
@@ -19,14 +25,22 @@ public class PassengerServiceImpl implements PassengerService {
 
 		return passengers;
 	}
-
 	@Override
-	public Passenger addPassenger(Passenger passenger) {
+	public void addPassenger(String firstName, String lastName, String agent, HttpHeaders headers) {
+		System.out.println(firstName);
+		System.out.println(lastName);
+		System.out.println(agent);
+		@SuppressWarnings("unchecked")
+		MultiValueMap<String, String> allHeaders =  (MultiValueMap<String, String>) headers.getRequestHeaders();
+		Set<String> headerKeys = allHeaders.keySet();
 		
-		passenger.setId(currentId++);
-		passengers.add(passenger);
+		for(String key: headerKeys) {
+			System.out.println(key);
+			System.out.println(headers.getHeaderString(key));
+		}
 		
-		return passenger;
 	}
+
+	
 
 }
