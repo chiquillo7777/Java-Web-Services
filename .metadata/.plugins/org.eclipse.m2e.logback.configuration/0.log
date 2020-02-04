@@ -6674,3 +6674,11 @@ java.lang.NullPointerException: null
 2020-02-04 07:42:55,120 [Worker-126: Launching PatientWSClient] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2020-02-04 07:42:55,123 [Worker-126: Launching PatientWSClient] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-02-04 07:42:55,123 [Worker-126: Launching PatientWSClient] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Carlos Chiquillo\Documents\workspace-sts-3.9.11.RELEASE\Java-Web-Services\restwsclient\src\test\resources
+2020-02-04 07:49:14,571 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-04 07:49:14,572 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-04 07:49:14,576 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-02-04 07:49:14,578 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-04 07:49:14,578 [Worker-138: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Carlos Chiquillo\Documents\workspace-sts-3.9.11.RELEASE\Java-Web-Services\restwsclient\src\test\resources
+2020-02-04 07:50:47,935 [Worker-135: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-02-04 07:50:47,935 [Worker-135: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-02-04 07:50:47,935 [Worker-135: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
