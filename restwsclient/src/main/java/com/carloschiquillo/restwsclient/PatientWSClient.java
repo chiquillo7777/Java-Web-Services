@@ -17,7 +17,7 @@ public class PatientWSClient {
 
 	public static void main(String[] args) {
 		Client client = ClientBuilder.newClient();
-		WebTarget target = client.target(PATIENT_SERVICE_URL).path(PATIENTS).path("/{id}").resolveTemplate("id", 123);
+		WebTarget target = client.target(PATIENT_SERVICE_URL).path(PATIENTS).path("/{id}").resolveTemplate("id", 126);
 		Builder request= target.request();
 		Patient patient = request.get(Patient.class);
 		
@@ -28,6 +28,8 @@ public class PatientWSClient {
 		
 		WebTarget putTarget = client.target(PATIENT_SERVICE_URL).path(PATIENTS);
 		Response updateResponse = putTarget.request().put(Entity.entity(patient, MediaType.APPLICATION_XML));
+		//clean resources
+		updateResponse.close();
 		System.out.println(updateResponse.getStatus());
 		
 		//create new patient
@@ -37,6 +39,13 @@ public class PatientWSClient {
 		WebTarget postTarget = client.target(PATIENT_SERVICE_URL).path(PATIENTS);
 		Patient createdPatient = postTarget.request().post(Entity.entity(newPatient, MediaType.APPLICATION_XML), Patient.class);
 		System.out.println("Create patient id: " + createdPatient.getId());
+		
+		//deletePatient assignment
+		WebTarget deleteTarget = client.target(PATIENT_SERVICE_URL).path(PATIENTS).path("/{id}").resolveTemplate("id", 128);
+		Builder deleteBuilder = deleteTarget.request();
+		Response deletedResponse = deleteTarget.request().delete();
+		//clean resources
+		client.close();
 	}
 
 }
