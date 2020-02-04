@@ -13,7 +13,10 @@ public class PassengerServiceImpl implements PassengerService {
 	List<Passenger> passengers = new ArrayList<>();
 	int currentId = 123;
 	@Override
-	public List<Passenger> getPassenger() {
+	public List<Passenger> getPassenger(int start, int size) {
+		System.out.println(start);
+		System.out.println(size);
+
 		return passengers;
 	}
 
