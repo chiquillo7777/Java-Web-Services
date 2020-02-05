@@ -3,6 +3,7 @@ package com.carloschiquillo.restws.client;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
+import javax.ws.rs.BadRequestException;
 import javax.ws.rs.client.AsyncInvoker;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
@@ -23,7 +24,10 @@ public class CheckProcessingClient {
 		try {
 			System.out.println(response.get());
 		} catch (InterruptedException | ExecutionException e) {
-			e.printStackTrace();
+			if(e.getCause() instanceof BadRequestException) {
+				BadRequestException bre = (BadRequestException) e.getCause();
+				System.out.println("Please send a valid list of checks");
+			}
 		}
 	}
 
