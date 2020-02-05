@@ -8,22 +8,37 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.List;
 
+import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.Response.ResponseBuilder;
 
 import org.apache.cxf.jaxrs.ext.multipart.Attachment;
+import org.springframework.stereotype.Service;
 
 @Path("/fileservice")
+@Service
 public class FileService {
 
-	private static final String FILE_PATH = "C:\\Users\\Carlos Chiquillo\\Documents\\testing\\Java-Web-Services\\restattachments\\src\\main\\resources\\uploaded";
+	private static final String FILE_PATH = "C:\\Users\\Carlos Chiquillo\\Documents\\testing\\Java-Web-Services\\restattachments\\src\\main\\resources\\uploaded\\uploaded.jpg";
 	
 	@Path("/upload")
 	@POST
 	public void upload(List<Attachment> attachments) throws FileNotFoundException, IOException {
+		System.out.println("====================Inside Upload ==========================================");
 		for(Attachment attachment: attachments) {
 			copyFile(attachment.getDataHandler().getInputStream());
 		}
+	}
+	
+	@GET
+	@Path("/download")
+	public Response download() {
+		File file = new File(FILE_PATH);
+		ResponseBuilder responseBuilder =  Response.ok(file);
+		responseBuilder.header("Content-Disposition", "attachment;filename=downloaded.jpg");
+		return responseBuilder.build();
 	}
 
 	private void copyFile(InputStream inputStream) throws FileNotFoundException, IOException {
