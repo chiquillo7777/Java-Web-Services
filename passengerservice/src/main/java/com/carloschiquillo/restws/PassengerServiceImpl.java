@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import javax.ws.rs.FormParam;
-import javax.ws.rs.HeaderParam;
+
 import javax.ws.rs.core.HttpHeaders;
+import javax.ws.rs.core.MultivaluedMap;
 
 import org.springframework.stereotype.Service;
-import org.springframework.util.MultiValueMap;
+
 
 import com.carloschiquillo.restws.model.Passenger;
 
@@ -30,8 +30,8 @@ public class PassengerServiceImpl implements PassengerService {
 		System.out.println(firstName);
 		System.out.println(lastName);
 		System.out.println(agent);
-		@SuppressWarnings("unchecked")
-		MultiValueMap<String, String> allHeaders =  (MultiValueMap<String, String>) headers.getRequestHeaders();
+		
+		MultivaluedMap<String, String> allHeaders = headers.getRequestHeaders();
 		Set<String> headerKeys = allHeaders.keySet();
 		
 		for(String key: headerKeys) {
