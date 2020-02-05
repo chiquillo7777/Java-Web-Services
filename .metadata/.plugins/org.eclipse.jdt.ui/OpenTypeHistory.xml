@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=utclient/C:\/Program Files\/Java\/jre1.8.0_241\/lib\/rt.jar&lt;javax.security.auth.callback(CallbackHandler.class[CallbackHandler" modifiers="1537" timestamp="1580323022566"/>
-<typeInfo handle="=mtom/src\/main\/java&lt;com.carloschiquillo.ws.soap{FileWs.java[FileWs" modifiers="513" timestamp="1580751816415"/>
+<typeInfo handle="=restwsasync/src\/main\/java&lt;com.carloschiquillo.restws{CheckProcessor.java[CheckProcessor" modifiers="513" timestamp="1580877799749"/>
+<typeInfo handle="=restwsasync/C:\/Users\/Carlos Chiquillo\/.m2\/repository\/org\/springframework\/boot\/spring-boot\/2.2.4.RELEASE\/spring-boot-2.2.4.RELEASE.jar&lt;org.springframework.boot.context(ConfigurationWarningsApplicationContextInitializer$Check.class[Check" modifiers="1548" timestamp="1579577932428"/>
+<typeInfo handle="=springsecurity/src\/main\/java&lt;com.carloschiquillo.restws{ProductService.java[ProductService" modifiers="513" timestamp="1580883817789"/>
 </typeInfoHistroy>

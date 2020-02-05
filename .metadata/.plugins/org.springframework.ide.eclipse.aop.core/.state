@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="javafirstws"/>
-<aop-project name="wsdlfirstws"/>
-<aop-project name="utclient"/>
-<aop-project name="mtom"/>
-<aop-project name="javasoapclient"/>
+<aop-project name="springsecurity"/>
+<aop-project name="restwsasync"/>
+<aop-project name="restattachments"/>
+<aop-project name="restattachmentsclient"/>
+<aop-project name="restwsclient"/>
+<aop-project name="passengerservice"/>
+<aop-project name="restwsasyncclient"/>
 </aop-reference-model>
