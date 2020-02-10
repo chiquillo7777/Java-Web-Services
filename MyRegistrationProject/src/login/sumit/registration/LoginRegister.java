@@ -32,7 +32,7 @@ public class LoginRegister extends HttpServlet {
 		String submitType = request.getParameter("submit");
 		Customer c = cd.getCustomer(userName, password);
 		
-		System.out.println(c.getName() + c.getPassword() + c.getUsername());
+		
 		
 		if(submitType.equals("login") && c!=null && c.getName()!=null) {
 			request.setAttribute("message", c.getName());
