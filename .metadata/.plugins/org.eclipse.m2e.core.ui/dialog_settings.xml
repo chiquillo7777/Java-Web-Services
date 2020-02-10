@@ -6,6 +6,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Carlos Chiquillo\Documents\testing\Java-Web-Services\jerseyws"/>
 			<item value="C:\Users\carlos.chiquillo\Documents\workspace1\Java-Web-Services\wsdlfirstws"/>
 		</list>
 		<list key="projectNameTemplate">

@@ -80,6 +80,7 @@
 		<item value="org.eclipse.wst.xsl.feature:1.3.900.v201908180412"/>
 		<item value="org.eclipse.zest:1.7.0.201606061308"/>
 		<item value="org.jboss.tools.m2e.wro4j.feature:1.1.0.201406251020"/>
+		<item value="org.jboss.tools.maven.apt.feature:1.5.3.201911081053"/>
 		<item value="org.sonatype.m2e.buildhelper.feature:0.15.0.201207090124"/>
 		<item value="org.sonatype.m2e.egit.feature:0.15.1.201806191431"/>
 		<item value="org.sonatype.m2e.mavenarchiver.feature:0.17.4.201905300046"/>
@@ -108,6 +109,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Carlos Chiquillo\Documents\testing\Java-Web-Services\springrest"/>
 			<item value="C:\Users\Carlos Chiquillo\Documents\testing\Java-Web-Services\jerseyws"/>
 			<item value="C:\Users\Carlos Chiquillo\Documents\testing\Java-Web-Services\restwsclient"/>
 			<item value="C:\Users\Carlos Chiquillo\Documents\testing\Java-Web-Services\passengerservice"/>

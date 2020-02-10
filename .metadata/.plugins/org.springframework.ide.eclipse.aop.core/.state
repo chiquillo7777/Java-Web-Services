@@ -2,6 +2,7 @@
 <aop-reference-model>
 <aop-project name="springsecurity"/>
 <aop-project name="restwsasync"/>
+<aop-project name="springrest"/>
 <aop-project name="restattachments"/>
 <aop-project name="restattachmentsclient"/>
 <aop-project name="restwsclient"/>
